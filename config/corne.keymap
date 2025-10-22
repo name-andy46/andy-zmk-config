@@ -56,9 +56,9 @@
 
         tri_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB4        &mkp LCLK       &msc SCRL_UP    &mkp RCLK        &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp MCLK       &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB5  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB4        &msc SCRL_LEFT  &mkp MCLK       &msc SCRL_RIGHT  &trans    &trans
                         &trans  &trans  &trans    &trans          &trans          &trans
             >;
         };
