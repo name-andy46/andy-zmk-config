@@ -10,6 +10,15 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+        behaviors {
+            tri_td: tap_dance_tri_layer {
+                compatible = "zmk,behavior-tap-dance";
+                #binding-cells = <0>;
+                tapping-term-ms = <200>;
+                bindings = <&mo 2>, <&tog 3>
+            }
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -55,11 +64,17 @@
         };
 
         tri_layer {
+// -----------------------------------------------------------------------------------------
+// |      |          |     |     |     |     |   |     |      |     |      |       |      |
+// |      |          |     |     |     |     |   |     |      |     |      |       |      |
+// |      |          |     |     |     |     |   |     |      |     |      |       |      |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &mkp MB5  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &mkp MB4        &msc SCRL_LEFT  &mkp MCLK       &msc SCRL_RIGHT  &trans    &trans
-                        &trans  &trans  &trans    &trans          &trans          &trans
+&trans  &mkp MB4  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &msc SCRL_UP      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LOCKING_NUM  &trans  &trans
+&trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans           &trans  &trans
+&trans  &trans    &msc SCRL_LEFT  &mkp MCLK       &msc SCRL_RIGHT  &mkp MB5          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans           &trans  &trans
+                                  &trans          &trans           &trans            &trans           &trans           &trans
             >;
         };
     };
