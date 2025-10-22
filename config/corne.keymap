@@ -74,7 +74,7 @@
 &trans  &mkp MB4  &mkp RCLK       &mmv MOVE_UP    &mkp LCLK        &msc SCRL_UP      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp LOCKING_NUM  &trans  &trans
 &trans  &trans    &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans           &trans  &trans
 &trans  &trans    &msc SCRL_LEFT  &mkp MCLK       &msc SCRL_RIGHT  &mkp MB5          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans           &trans  &trans
-                                  &trans          &trans           &trans            &trans           &trans           &trans
+                                  &trans          &trans           &trans            &kp KP_NUMBER_0           &trans           &trans
             >;
         };
     };
