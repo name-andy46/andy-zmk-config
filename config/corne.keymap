@@ -15,7 +15,7 @@
                 compatible = "zmk,behavior-tap-dance";
                 #binding-cells = <0>;
                 tapping-term-ms = <200>;
-                bindings = <&kp LALT CAPSLOCK>, <&tog 3>;
+                bindings = <&mt LALT CAPSLOCK>, <&tog 3>;
             };
         };
 
